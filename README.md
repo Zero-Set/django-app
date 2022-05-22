@@ -10,12 +10,12 @@ This is test application
 - How to connect PostgreSQL, (named = db container)
 
 ```
-[(´・ω・｀)@Zset ~/sampledjango]{feature/djangoapp}$ docker-compose exec web python manage.py migrate
+[Zset ~/sampledjango]{feature/djangoapp}$ docker-compose exec web python manage.py migrate
 Operations to perform:
   Apply all migrations: admin, auth, contenttypes, polls, sessions
 Running migrations:
   Applying polls.0001_initial... OK
-[(´・ω・｀)@Zset ~/sampledjango]{feature/djangoapp}$ docker-compose exec db psql -h db -U postgres
+[Zset ~/sampledjango]{feature/djangoapp}$ docker-compose exec db psql -h db -U postgres
 Password for user postgres:
 psql (13.2 (Debian 13.2-1.pgdg100+1))
 Type "help" for help.
@@ -41,7 +41,7 @@ postgres=# \dt
 
 ## Test
 ```
-[(´・ω・｀)@Zset ~/django-app]{feature/djangoapp}$ docker-compose run web python manage.py test polls
+[Zset ~/django-app]{feature/djangoapp}$ docker-compose run web python manage.py test polls
 Creating django-app_web_run ... done
 Creating test database for alias 'default'...
 System check identified no issues (0 silenced).
